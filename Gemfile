@@ -55,3 +55,5 @@ end
 # bootstrap
 gem 'bootstrap-sass'
 
+#pry
+gem 'pry-rails', :group => :development
