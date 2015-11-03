@@ -57,3 +57,7 @@ gem 'bootstrap-sass'
 
 #pry
 gem 'pry-rails', :group => :development
+
+#Mock seed data
+gem 'faker'
+
