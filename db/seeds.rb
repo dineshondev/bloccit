@@ -2,10 +2,17 @@ require 'faker'
 
 #create posts
 50.times do
-  Post.create!(
-    title: Faker::Lorem.sentence,
-    body: Faker::Lorem.paragraph
-  )
+
+  all_posts = Post.all
+  sentence = Faker::Lorem.sentence
+  paragraph = Faker::Lorem.paragraph
+
+  if !all_posts.any? { |post| (post[:title] == sentence && post[:body] == paragraph) }
+    Post.create!(
+      title: sentence,
+      body: paragraph
+    )
+  end
 end
 posts = Post.all
 
