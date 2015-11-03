@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
  group :production do
    gem 'pg'
-   gem 'rails_12factor'
+   gem 'unicorn'
+   gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
+   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
  end
  
  group :development do
