@@ -61,3 +61,6 @@ gem 'pry-rails', :group => :development
 #Mock seed data
 gem 'faker'
 
+# MVC Gem for authentication
+gem 'devise'
+
