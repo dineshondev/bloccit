@@ -64,3 +64,6 @@ gem 'faker'
 # MVC Gem for authentication
 gem 'devise'
 
+# Figaro to store env variables
+gem 'figaro', '1.0'
+
