@@ -67,3 +67,6 @@ gem 'devise'
 # Figaro to store env variables
 gem 'figaro', '1.0'
 
+# Gem for authorization
+gem 'pundit'
+
