@@ -48,6 +48,13 @@ posts = Post.all
   )
 end
 
+# Create Summaries
+50.times do
+  Summary.create!(
+    post: posts.sample,
+    summary: Faker::Lorem.sentence
+  )
+end
 
 # Create an admin user
 admin = User.new(
@@ -82,3 +89,4 @@ puts "Seed finished"
 puts "#{User.count} users created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
+puts "#{Summary.count} Summary created"

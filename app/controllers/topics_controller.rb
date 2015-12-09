@@ -12,6 +12,8 @@ class TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id])
     @posts = @topic.posts
+    # @summaries = Summary.all
+    # @summary = @summaries.find(params[:post_id])
     authorize @topic
   end
 

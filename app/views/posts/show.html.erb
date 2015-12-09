@@ -2,6 +2,18 @@
  
 <div class="row">
   <div class="col-md-8">
+  <% if @summary %>
+    <p>
+      <%= @summary.summary %>
+      <%= link_to "Edit", edit_summary_path(@post.summary), class: 'btn btn-success' %>
+    </p>
+  <% else %>
+    <p>
+      <%= link_to "Add Summary", new_summary_path, class: 'btn btn-success' %>
+    </p>
+  <% end %>
+  </div>
+  <div class="col-md-8">
     <p><%= @post.body %></p>
   </div>
   <div class="col-md-4">
@@ -9,4 +21,5 @@
       <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
     <% end %>
   </div>
+
 </div>
