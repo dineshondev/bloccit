@@ -70,3 +70,7 @@ gem 'figaro', '1.0'
 # Gem for authorization
 gem 'pundit'
 
+# Markdown library that is used in github
+gem 'redcarpet'
+
+
