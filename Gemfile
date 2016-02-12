@@ -73,4 +73,11 @@ gem 'pundit'
 # Markdown library that is used in github
 gem 'redcarpet'
 
+# This gem provides a simple and extremely flexible way to upload files from Ruby applications. 
+gem 'carrierwave'
 
+# A ruby wrapper for ImageMagick command line.
+gem 'mini_magick'
+
+# Ruby cloud services library. http://fog.io
+gem 'fog'
