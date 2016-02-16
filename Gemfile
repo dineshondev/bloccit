@@ -81,3 +81,7 @@ gem 'mini_magick'
 
 # Ruby cloud services library. http://fog.io
 gem 'fog'
+
+# for pagination
+gem 'will_paginate', '~> 3.0.5'
+
