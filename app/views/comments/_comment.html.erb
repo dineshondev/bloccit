@@ -1,7 +1,7 @@
 <p>
   <%= comment.body %>
   <% if comment.user %>
-    <div class="media">
+    <%= content_tag :div, class: 'media', id: "comment-#{comment.id}" do %>
   <div class="media-left">
     <%= image_tag(comment.user.avatar.small.url, class: "media-object") if comment.user.avatar? %>
   </div>
@@ -14,6 +14,6 @@
     </small>
     <p><%= comment.body %></p>
   </div>
-</div>
+<% end %>
   <% end %>
 </p>
