@@ -89,3 +89,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Tool for rails feature spec
+group :test do
+  gem 'capybara'
+end
+
