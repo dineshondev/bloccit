@@ -15,6 +15,7 @@ describe Comment do
 
     context "with user's permision" do
       it "sends an email to users who have favorited the post" do
+
         @user.favorites.where(post: @post).create
 
         allow( FavoriteMailer )
@@ -22,7 +23,7 @@ describe Comment do
           .with(@user, @post, @comment)
           .and_return( double(deliver_now: true) )
 
-          expect( FavouriteMailer )
+          expect( FavoriteMailer )
             .to receive(:new_comment)
 
           @comment.save
