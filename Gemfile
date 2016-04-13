@@ -94,3 +94,4 @@ group :test do
   gem 'capybara'
 end
 
+gem 'newrelic_rpm'
